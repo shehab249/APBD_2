@@ -1,0 +1,26 @@
+# Ignore Visual Studio and Rider-specific files
+.idea/
+*.suo
+*.user
+*.sln.cache
+
+# Ignore build artifacts
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Ignore NuGet packages
+*.nupkg
+project.lock.json
+packages/
+
+# Ignore compiled DLLs and PDBs
+*.dll
+*.pdb
+*.exe
+
+# Ignore Rider and JetBrains files
+.idea/
+*.iml
+rider.project.*
