@@ -16,7 +16,7 @@ namespace LegacyApp
                 return false;
             }
 
-            var no = DateTime.Now;
+            var now = DateTime.Now;
             int age = now.Year - dateOfBirth.Year;
             if (now.Month < dateOfBirth.Month || (now.Month == dateOfBirth.Month && now.Day < dateOfBirth.Day)) age--;
 
