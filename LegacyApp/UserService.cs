@@ -1,20 +1,14 @@
 ﻿using System;
 
+
 namespace LegacyApp
 {
     public class UserService
     {
         public bool AddUser(string firstName, string lastName, string email, DateTime dateOfBirth, int clientId)
         {
-            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName))
-            {
-                return false;
-            }
-
-            if (!email.Contains("@") && !email.Contains("."))
-            {
-                return false;
-            }
+            firstName.IsValidName(lastName);
+            email.IsValidEmail();
 
             var now = DateTime.Now;
             int age = now.Year - dateOfBirth.Year;

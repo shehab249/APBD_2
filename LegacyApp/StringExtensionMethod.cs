@@ -3,7 +3,22 @@
 public static class StringExtensionMethod
 {
     public static bool IsValidEmail(this string email)
+    { 
+        if (!email.Contains("@") || !email.Contains("."))
+        {
+            return false;
+        }
+
+        return true;
+    }
+
+    public static bool IsValidName(this string firstName, string lastName)
     {
-        return email.Contains("@") && email.Contains(".");
+        if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName))
+        {
+            return false;
+        }
+
+        return true;
     }
 }
