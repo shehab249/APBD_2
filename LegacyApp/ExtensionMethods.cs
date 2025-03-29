@@ -1,6 +1,6 @@
 ﻿namespace LegacyApp;
 
-public static class StringExtensionMethod
+public static class ExtensionMethods
 {
     public static bool IsValidEmail(this string email)
     { 
